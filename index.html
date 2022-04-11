@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <title>Grow With Google | Home</title>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } 
+                else {
+                    document.getElementById("navbar").style.top = "-45px";
+                }
+                    prevScrollpos = currentScrollPos;
+                }
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="bgvideo">
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/interns.mp4" type="video/mp4">
+            </video>
+        </div>
+        <header class="nav-bar" id="navbar">
+            <div class="google-logo">
+                <img clas="glogo" src="assets/google logo.png">
+            </div>
+            <ul class="nav-bar-icons">
+                <li><a class="future">Build your future</a></li>
+                <li><a class="other">Home</a></li>
+                <li><a class="other">Scholarship+</a></li>
+                <li><a class="other">Internships+</a></li>
+                <li><a class="other">Events</a></li>
+                <li><a class="other">Programs</a></li>
+                <li><a class="other">Resources</a></li>
+            </ul>
+
+            <h1 class="heading">
+                We're here to help you get <br>one step closer to your <br>future
+            </h1>
+            <div class="apply">
+                <a class="button" href="#">
+                    HOW TO APPLY
+                </a>
+            </div>
+
+        </header>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url('../assets/fonts/PlusJakartaDisplay-Regular.woff');
+}
+
+*{
+    font-family: MyFont;
+}
+
+body .wrap .nav-bar .google-logo{
+    background-color: rgba(255, 255, 255, 0.054);
+    backdrop-filter: blur(5px);
+    z-index: 20;
+}
+
+body .wrap .nav-bar .google-logo img{
+    height: 45px;
+    margin-left: 20px;
+}
+
+body .wrap{
+    background-image: url('../assets/interns.mp4');
+}
+
+.wrap .bgvideo #myVideo{
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+    min-width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    min-height: 100%;
+}
+
+body .wrap .bgvideo{
+    background-image: linear-gradient(to bottom, rgba(46, 40, 40, 0.714), rgba(64, 64, 53, 0));
+    z-index: 2;
+
+}
+
+body .wrap .nav-bar-icons{
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+body .wrap .nav-bar .google-logo{
+    display: flex;
+    align-items: center;
+}
+
+body .wrap .nav-bar{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+body #navbar{
+    transition: 0.5s ease-in-out;
+}
+
+body .wrap .nav-bar .google-logo img{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 13px;
+    height: 20px;
+    margin-left: 4px;
+}
+
+body .wrap .nav-bar .nav-bar-icons li{
+    list-style: none;
+}
+
+body .wrap .nav-bar .nav-bar-icons li a{
+    margin-right: 30px;
+    color: rgb(223, 217, 217);
+    padding: 18px 10px;
+    transition: 0.2s ease-in-out;
+}
+
+body .wrap .nav-bar-icons li .future{
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-weight: 450;
+    border-bottom: 1px transparent;
+}
+
+body .wrap .nav-bar .nav-bar-icons li .other{
+    background-image: linear-gradient(#fff, rgb(255, 255, 255)), linear-gradient(rgba(192, 192, 192, 0), rgba(192, 192, 192, 0));
+    background-size: 0 1px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .3s ease-out;
+    border: solid transparent;
+    cursor: pointer;
+}
+
+body .wrap .nav-bar .nav-bar-icons li .other:hover{
+    background-size: 100% 2px, auto;
+    color: #fff;
+}
+
+body .wrap .nav-bar .heading{
+    color: #fff;
+    margin-top: 120px;
+    font-size: 45px;
+    margin-left: 200px;
+}
+
+body .wrap .nav-bar .apply .button{
+    padding: 15px 27px;
+    background-color: rgb(52, 131, 211);
+    color: #fff;
+    text-decoration: none;
+    margin-left: 200px;
+    margin-top: 50px;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+body .wrap .nav-bar .apply .button:hover{
+    background-color: rgb(39, 66, 164);
+}
+
+body .wrap .nav-bar .apply{
+    margin-top: 34px;
+}
